@@ -21,6 +21,21 @@ How do we log into Delta?
 
 How do we run a job on Delta?
 
+## DIRECT Search Algorithm
+A search algorithm that searches for coordinates (i.e. inputs) in a sample set
+that generates the minumun value from a function that has little to no
+randomness.
+
+DIRECT is short for DIvide RECTangle and is named after the method of search that
+it uses.
+
+#### General Algorithm
+1. Start with a sample search space.
+1. Select one of the rectangles.
+1. Divide into (3) rectangles.
+1. Sample center of rectangles.
+1. Repeat from step 2.
+
 ## VTDIRECT95
 
 VTDIRECT95 is an algorithm that is based off of the DIRECT algorithm and adds
@@ -32,7 +47,7 @@ sub regions.
 There algorithms are numerical solutions and are used in places where
 analytical solutions are difficult. In the case of finding the maximum
 lift-to-drag ratio based off of non-geometrical parameters of a wing, a
-numerical solution is needed because of complex aerodynamic equations make it
+numerical solution is needed because the complex aerodynamic equations make it
 difficult to use analytical solutions.
 
 Design parameters are the parameters to input values to that will generate the
