@@ -1,0 +1,26 @@
+! pdirectUVLM.nml: namelist for calling pVTDIRECT to optimize
+! a 5-dimensional optimization function.
+&PSCHEME
+n_subdomains=1
+n_masters=1
+bin = 1
+/
+&PROBLEM
+N=5
+LB(1:5)=1.0, 0.0, 20.0, 0.0, 0.0
+UB(1:5)=2.0, 1.0, 70.0, 360.0, 360.0
+/
+&OPTPARM
+iter_lim=8
+eval_lim=40000
+diam_lim=0
+objf_conv=0
+eps_fmin=0.0001
+c_switch=1
+min_sep=0.5
+weight(1:5)=1,1,1,1,1
+n_optbox=5
+/
+&CHKPTOP
+chkpt_start=0
+/
